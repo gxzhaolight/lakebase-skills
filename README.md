@@ -3,9 +3,8 @@
 Reusable, shareable **skills** for [Databricks Lakebase](https://docs.databricks.com/aws/en/oltp/) — packaged how-tos and runnable agent skills that accelerate common Lakebase work. Organized by **play / pattern** so you can browse by what you're trying to do.
 
 Each skill folder contains:
-- a **`SKILL.md`** — an agent skill (frontmatter + instructions) you can drop into an AI coding assistant (Claude Code, Databricks Assistant / Genie Code, etc.)
-- a **customer guide** (HTML) — a readable walkthrough of the approach
-- a **`.zip`** — the packaged skill, ready to download and install
+- a **`SKILL.md`** — an agent skill (frontmatter + instructions) you can drop directly into an AI coding assistant (Claude Code, Databricks Assistant / Genie Code, etc.)
+- a **customer guide** (HTML) — a readable walkthrough of the approach, including install steps
 
 > Field-built enablement material. Accelerators, not authority — always validate output against the official [Databricks Lakebase documentation](https://docs.databricks.com/aws/en/oltp/) and your own tests.
 
@@ -27,7 +26,7 @@ Moving code and workloads onto Lakebase.
 ## Using a skill
 
 1. Open the skill folder and read its `README.md` + customer guide.
-2. Download the `.zip` (or copy `SKILL.md`) and add it to your AI assistant's skills.
+2. Copy the skill folder (its `SKILL.md`) into your AI assistant's skills directory — e.g. `…/.assistant/skills/<skill-name>/SKILL.md`.
 3. Run it on a small batch first; validate with deterministic tests before scaling.
 
 ## License
@@ -36,4 +35,4 @@ Moving code and workloads onto Lakebase.
 
 ## Contributing
 
-Each new skill is its own folder under the matching category, with a `SKILL.md`, a customer guide, a `.zip`, and a short `README.md`. Open a PR.
+Each new skill is its own folder under the matching category, with a `SKILL.md`, a customer guide, and a short `README.md`. Open a PR.

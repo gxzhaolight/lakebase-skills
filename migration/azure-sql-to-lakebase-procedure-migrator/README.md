@@ -16,13 +16,12 @@ Get the classification right and you convert far *less* code — and what remain
 
 ## What's here
 
-- **`SKILL.md`** — the agent skill (drop into Claude Code / Databricks Assistant / Genie Code). Analyzes → converts → validates, and reports blockers explicitly.
-- **`genie-code-lakebase-customer-guide.html`** — a readable customer guide to the Genie Code approach for this migration.
-- **`azure-sql-to-lakebase-procedure-migrator.zip`** — the packaged skill, ready to download/install.
+- **`SKILL.md`** — the agent skill (drop directly into Claude Code / Databricks Assistant / Genie Code). Analyzes → converts → validates, and reports blockers explicitly.
+- **`genie-code-lakebase-customer-guide.html`** — a readable customer guide to the Genie Code approach for this migration, with step-by-step install.
 
 ## How to use
 
-1. Add `SKILL.md` to your AI assistant (or unzip the package).
+1. Copy `SKILL.md` into your AI assistant's skills directory — e.g. `…/.assistant/skills/azure-sql-to-lakebase-procedure-migrator/SKILL.md` (see the customer guide's Install section).
 2. Point it at the T-SQL you want to migrate.
 3. Work in **small batches** (2–5 procs, mixing simple + hard) and validate each with deterministic tests before scaling. Expect roughly **30–50%** of procedural code (cursors, dynamic SQL, TRY/CATCH, temp tables, collation) to need human review.
 
